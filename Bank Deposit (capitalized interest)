@@ -1,0 +1,24 @@
+//The depositor deposited a certain amount of money in the Bank. This amount is increased annually by a percentage (percent > 0) of the current Deposit amount. Determine how much money will be on the account in a period of years?
+
+//Write a function named bankPercent that takes three numbers as arguments:
+
+//money (initial Deposit amount);
+//percent (capitalized Bank interest);
+//period (number of years),
+//and returns the amount of money on the Deposit after a period of years. Round the result to two decimal places.
+
+//In this type of Deposit, the amount increases annually by p percent of the available (current) amount:
+
+//s = s + s * p / 100;
+//In the solution, use the do while loop.
+
+function bankPercent(money, percent, period){
+  let sum = money;
+  let year = 0;
+    do { 
+      sum = sum + sum * percent / 100;
+      year++;
+    }
+    while ( year < period);
+ return sum.toFixed(2);
+}
