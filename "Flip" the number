@@ -1,0 +1,37 @@
+Дано целое положительное число. Получите другое целое число, полученное из исходного числа путем чтения его справа налево. Используйте операции умножения, деления и нахождения остатка от деления. Запрещено использование методов строк и массивов. В решении используйте цикл do while.
+
+Напишите функцию с именем invertNumber, которая принимает в качестве аргумента число n и возвращает перевернутое число.
+
+Если в результате переворачивания числа первой цифрой становится цифра 0, число следует выводить без нуля в начале.
+
+Примеры:
+
+функция invertNumber(123) должна возвратить 321.
+функция invertNumber(15670) должна возвратить 7651.
+функция invertNumber(11) должна возвратить 11.
+функция invertNumber(1000) должна возвратить 1.
+
+
+Given a positive integer. Get another integer derived from the original number by reading it from right to left. Use the operations of multiplication, division, and finding the remainder of the division. The use of string and array methods is prohibited. In the solution, use the do while loop.
+
+Write a function named insert Number that takes the number n as an argument and returns an inverted number.
+
+If the first digit becomes 0 as a result of flipping a number, the number should be output without a zero at the beginning.
+
+Examples:
+
+the invert Number(123) function should return 321.
+the invert Number(15670) function should return 7651.
+the invert Number(11) function should return 11.
+the invert Number(1000) function should return 1.
+
+function invertNumber(n){
+  let res = 0;
+  let last;
+    do {
+      last = n % 10;
+      res = res * 10 + last;
+      n = (n - last) / 10;
+    } while ( n > 0);
+return res;
+}
