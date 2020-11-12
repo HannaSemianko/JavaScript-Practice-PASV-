@@ -1,0 +1,33 @@
+Дано целое положительное число. Получите массив, состоящий из четных цифр этого числа.
+
+Напишите функцию с именем evenDigits, которая принимает в качестве аргумента число n и возвращает массив четных цифр. Если таких цифр в числе нет, возвратить пустой массив. Запрещено использование методов строк и массивов. В решении используйте цикл do while. Порядок цифр в массиве должен совпадать с порядком цифр в исходном числе.
+
+Примеры:
+
+функция evenDigits(12345) должна возвратить [2, 4];
+функция evenDigits(110325) должна возвратить [0, 2];
+функция evenDigits(22222) должна возвратить [2, 2, 2, 2, 2];
+функция evenDigits(131) должна возвратить [].
+
+Given a positive integer. Get an array consisting of even digits of this number.
+
+Write a function named evenDigits that takes the number n as an argument and returns an array of even digits. If there are no such digits in the number, return an empty array. The use of string and array methods is prohibited. In the solution, use the do while loop. The order of digits in the array must match the order of digits in the original number.
+
+Examples:
+
+the even Digits(12345) function should return [2, 4];
+the even Digits(110325) function should return [0, 2];
+the even Digits(22222) function should return [2, 2, 2, 2, 2];
+the even Digits(131) function should return [].
+
+
+function evenDigits(n){
+  let arr = [];
+  let last;
+    do {
+      last = n % 10;
+      if( last % 2 === 0) arr.unshift(last);
+      n = (n - last) / 10;
+    } while (n > 0);
+return arr;
+}
