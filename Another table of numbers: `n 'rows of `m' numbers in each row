@@ -1,0 +1,46 @@
+Напишите функцию с именем numericalTable, которая принимает числа n и m в качестве аргументов и возвращает таблицу чисел от 1 до n. Каждая строка содержит m чисел, разделенных пробелом. Все строки кроме последней, заканчиваются символом \n перевода строки.
+
+Например, для n = 4, m = 3 должна быть получена строка:
+
+"1 1 1\n2 2 2\n3 3 3\n4 4 4"
+
+При выводе в консоль такая строка отображается как таблица: (выводятся 4 строки, содержащие числа от 1 до 4, по 3 числа в каждой строке).
+
+"1 1 1
+2 2 2
+3 3 3
+4 4 4"
+Замечание: при проверке решения в тестах символ перевода строки не отображается.
+
+Примеры:
+
+функция numericalTable(1, 6) должна возвратить: "1 1 1 1 1 1";
+функция numericalTable(3, 5) должна возвратить: "1 1 1 1 1\n2 2 2 2 2\n3 3 3 3 3".
+
+Write a function named numericalTable that takes n and m as arguments and returns a table of numbers from 1 to n. Each line contains m numbers separated by a space. All lines except the last one end with the \n newline character.
+
+For example, for n = 4, m = 3, the string should be obtained:
+
+"1 1 1\n2 2 2\n3 3 3\n4 4 4"
+
+When output to the console, this row is displayed as a table: (4 rows containing numbers from 1 to 4 are output, with 3 numbers in each row).
+
+"1 1 1
+2 2 2
+3 3 3
+4 4 4"
+Comment: when checking the solution in tests, the newline character is not displayed.
+
+Examples:
+
+the function numeric al Table(1, 6) should return: "1 1 1 1 1 1";
+the function numeric al Table(3, 5) should return: "1 1 1 1 1\n 2 2 2 2 2\n 3 3 3 3 3".
+
+function numericalTable(n, m){
+ let str = '';
+   for (let i = 1; i <= n; i++) {
+     if ( i < n) str = str + ( i +' ').repeat(m - 1) + i + '\n';
+       else str = str + ( i +' ').repeat(m - 1) + i;
+   }
+return str;
+}
