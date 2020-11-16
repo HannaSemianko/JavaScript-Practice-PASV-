@@ -1,0 +1,49 @@
+Напишите функцию с именем numericalTable, которая принимает число n в качестве аргумента и возвращает таблицу чисел от 1 до n. Каждая строка содержит 5 чисел, разделенных пробелом. Все строки кроме последней, заканчиваются символом \n перевода строки.
+
+Например, для n = 4 должна быть получена строка:
+
+"1 1 1 1 1\n2 2 2 2 2\n3 3 3 3 3\n4 4 4 4 4"
+
+При выводе в консоль такая строка отображается как таблица:
+
+"1 1 1 1 1
+2 2 2 2 2
+3 3 3 3 3
+4 4 4 4 4"
+Замечание: при проверке решения в тестах символ перевода строки не отображается.
+
+Примеры:
+
+функция numericalTable(1) должна возвратить: "1 1 1 1 1";
+функция numericalTable(3) должна возвратить: "1 1 1 1 1\n2 2 2 2 2\n3 3 3 3 3";
+функция numericalTable(0) должна возвратить: "".
+
+Write a function named numericalTable that takes the number n as an argument and returns a table of numbers from 1 to n. Each line contains 5 numbers separated by a space. All lines except the last one end with the \n newline character.
+
+For example, for n = 4, the string should be obtained:
+
+"1 1 1 1 1\n2 2 2 2 2\n3 3 3 3 3\n4 4 4 4 4"
+
+When output to the console, this line is displayed as a table:
+
+"1 1 1 1 1
+2 2 2 2 2
+3 3 3 3 3
+4 4 4 4 4"
+Comment: when checking the solution in tests, the newline character is not displayed.
+
+Examples:
+
+the numeric al Table(1) function should return: "1 1 1 1 1";
+the numeric al Table(3) function should return: "1 1 1 1 1\n 2 2 2 2 2\n 3 3 3 3 3";
+the numeric al Table(0) function should return:"".
+
+function numericalTable(n){
+  let str = '';
+    for ( let i = 1; i <= n; i++) {
+     if ( i < n) str = str + (i + ' ').repeat(4) + i +'\n';
+       else str = str +(i + ' ').repeat(4) + i;
+    }
+return str;
+}
+     
