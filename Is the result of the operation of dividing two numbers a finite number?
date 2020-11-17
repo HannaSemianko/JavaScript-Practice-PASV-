@@ -1,0 +1,19 @@
+Напишите функцию checkingForFinite, которая принимает две числа a и b в качестве аргументов, выполняет деление числа a на число b и проверяет результат деления (частное чисел) на конечность. Функция должна возвратить true, если результат - конечное число, и false - в противном случае.
+
+Примеры:
+
+функция checkingForFinite(4, 2) должна возвратить true;
+функция checkingForFinite(3, 0) должна возвратить false;
+функция checkingForFinite(-1, 0) должна возвратить false.
+
+Write a checkingforFinite function that takes two numbers a and b as arguments, divides the number a by the number b, and checks the result of division (the quotient of numbers) by finiteness. The function must return true if the result is a finite number, and false otherwise.
+
+Examples:
+
+the checkingforFinite(4, 2) function should return true;
+the checkingforFinite(3, 0) function should return false;
+the checkingforFinite(-1, 0) function should return false.
+
+function checkingForFinite(a, b){
+  return Number.isFinite(a / b);
+}
