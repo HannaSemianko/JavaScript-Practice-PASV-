@@ -1,0 +1,19 @@
+Напишите функцию safeNumber, которая принимает целое число x, и возвращает true, если переменная x содержит безопасное целочисленное значение, и false - в противном случае.
+
+Примеры:
+
+функция safeNumber(20000) должна возвратить true;
+функция safeNumber(9007199254740991) должна возвратить true;
+функция safeNumber(9007199254740992) должна возвратить false.
+
+Write a saveNumber function that accepts an integer x and returns true if the variable x contains a safe integer value, and false otherwise.
+
+Examples:
+
+the safeNumber(20000) function should return true;
+the safeNumber(9007199254740991) function should return true;
+the safeNumber(9007199254740992) function should return false.
+
+function safeNumber(x){
+  return Number.isSafeInteger(x);
+}
