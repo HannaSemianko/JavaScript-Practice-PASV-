@@ -1,0 +1,53 @@
+Напишите функцию с именем upsideDown, которая принимает число n в качестве аргумента и возвращает треугольник из n строк, состоящих из звездочек (*). В первой строке n звездочек, во второй - (n-1) звездочка, ... , в последней строке 1 звездочка.
+
+Все строки кроме последней, заканчиваются символом \n перевода строки.
+
+Например, для n = 5, должна быть получена строка:
+
+"*****\n****\n***\n**\n*"
+
+При выводе в консоль такая строка отображается как "перевернутый треугольник":
+
+"*****
+****
+***
+**
+*"
+Замечание: при проверке решения в тестах символ перевода строки не отображается.
+
+Примеры:
+
+функция upsideDown(1) должна возвратить: "*";
+функция upsideDown(3) должна возвратить: "***\n**\n*".
+
+
+Write a function called upside Down that takes the number n as an argument and returns a triangle of n strings consisting of asterisks (*). There are n asterisks in the first line, (n - 1) asterisk in the second, ..., and 1 asterisk in the last line.
+
+All lines except the last one end with the \n newline character.
+
+For example, for n = 5, you should get the string:
+
+"*****\n****\n***\n*"
+
+When output to the console, this line is displayed as "inverted triangle":
+
+"*****
+****
+***
+**
+*"
+Note: when checking the solution in tests, the newline character is not displayed.
+
+Examples:
+
+the function upside Down(1) should return: "*";
+the function upside Down (3) should return: "***\n**\n*".
+
+function upsideDown(n){
+  let str = '';
+    for ( let i = n; i >= 1; i--) {
+      if ( i > 1) str+= '*'.repeat(i) + '\n';
+        else str+= '*'.repeat(i);
+    }
+return str;
+}
