@@ -1,0 +1,30 @@
+Дан массив arr и некоторое число num. Определите, содержит ли массив элемент, противоположный числу num, и если да, возвратите его индекс. Если такого элемента нет, вернуть undefined.
+
+Напишите функцию с именем oppositeInArray, которая принимает массив arr и число num в качестве аргументов и возвращает индекс элемента, противоположного числу num.
+
+Пример:
+
+функция oppositeInArray([1, -2, 3, 5], 2) должна возвратить 1 (т.к. элемент arr[1] = -2 - значение, противоположное данному числу 2).
+функция oppositeInArray([100, 36, 1, 50], -50) должна возвратить 3 (т.к. элемент arr[3] = 50 - значение, противоположное данному числу -50).
+функция oppositeInArray([10, 3, 8, 11], 11) должна возвратить undefined (в массиве нет элемента -11).
+
+Given an array arr and some number num. Determine whether the array contains an element that is the opposite of num, and if so, return its index. If there is no such element, return undefined.
+
+Write a function named opposite In Array that takes the array arr and the number num as arguments and returns the index of the element opposite to the number num.
+
+Example:
+
+the opposite in Array function([1, -2, 3, 5], 2) must return 1 (since the arr[1] = -2 element is the opposite of the given number 2).
+the opposite function In Array([100, 36, 1, 50], -50) should return 3 (because the element ar[3] = 50 is the value opposite the given number is -50).
+the opposite function In Array([10, 3, 8, 11], 11) should return undefined (in the array there is no element of -11).
+
+function oppositeInArray(arr, num){
+  let ind;
+  for ( let i = 0; i <= arr.length; i++) {
+    if ( arr[i] === -num){
+    ind = i;
+    break;
+    }
+  }
+return ind >= 0 ? ind : undefined;
+}
