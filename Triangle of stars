@@ -1,0 +1,52 @@
+Напишите функцию с именем starTriangle, которая принимает число n в качестве аргумента и возвращает треугольник из n строк, состоящих из звездочек (*). Все строки кроме последней, заканчиваются символом \n перевода строки.
+
+Например, для n = 7, должна быть получена строка:
+
+"*\n**\n***\n****\n*****\n******\n*******"
+
+При выводе в консоль такая строка отображается как "треугольник":
+
+"*
+**
+***
+****
+*****
+******
+*******"
+Замечание: при проверке решения в тестах символ перевода строки не отображается.
+
+Примеры:
+
+функция starTriangle(1) должна возвратить: "*";
+функция starTriangle(3) должна возвратить: "*\n**\n***".
+
+Write a function named starTriangle that takes the number n as an argument and returns a triangle of n strings consisting of asterisks (*). All lines except the last one end with the \n newline character.
+
+For example, for n = 7, must be obtained line:
+
+"*\n**\n***\n****\n*****\n******\n*******"
+
+When outputting to the console, the string appears as "triangle":
+
+"*
+**
+***
+****
+*****
+******
+*******"
+Comment: when checking the solution in tests, the newline character is not displayed.
+
+Examples:
+
+the star Triangle(1) function should return: "*";
+the starTriangle(3) function should return: "*\n**\n***".
+
+function starTriangle(n){
+ let str = '';
+   for ( let i = 1; i <= n; i++) {
+     if( i < n ) str+= '*'.repeat(i) + '\n';
+       else str+= '*'.repeat(i);
+   }
+return str;
+}
