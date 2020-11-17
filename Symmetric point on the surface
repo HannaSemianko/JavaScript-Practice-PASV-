@@ -1,0 +1,37 @@
+Точки M и N симметричны относительно начала координат.
+
+points
+
+Напишите функцию с именем oppositePoint, которая принимает числа x и y (координаты точки M) в качестве аргументов и возвращает координаты точки N в виде строки "N(x, y)".
+
+Пример:
+
+функция oppositePoint(4, 5) должна возвратить "N(-4, -5)";
+функция oppositePoint(-4, -5) должна возвратить "N(4, 5)";
+функция oppositePoint(-4, 5) должна возвратить "N(4, -5)";
+функция oppositePoint(4, -5) должна возвратить "N(-4, 5)";
+функция oppositePoint(4, 0) должна возвратить "N(-4, 0)";
+функция oppositePoint(0, 0) должна возвратить "N(0, 0)".
+
+The points M and N are symmetric with respect to the origin.
+
+points
+
+Write a function named oppositePoint that takes the numbers x and y (coordinates of point M) as arguments and returns the coordinates of point N as the string "N(x, y)".
+
+Example:
+
+function oppositePoint(4, 5) should return "N(-4, -5)";
+function oppositePoint(-4, -5) should return "N(4, 5)";
+function oppositePoint(-4, 5) should return "N(4, -5)";
+function oppositePoint(4, -5) should return "N(-4, 5)";
+function oppositePoint(4, 0) should return "N(-4, 0)";
+the oppositePoint(0, 0) function should return " N(0, 0)".
+
+function oppositePoint(x, y){
+  return `N({-x ,-y})`;
+}
+
+
+
+
