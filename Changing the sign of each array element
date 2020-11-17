@@ -1,0 +1,18 @@
+Напишите функцию с именем oppositeArray, которая принимает массив arr в качестве аргумента и и возвращает массив, в котором каждый элемент заменен на противоположный по знаку элемент.
+
+Пример:
+
+функция oppositeArray([1, -2, 3]) должна возвратить [-1, 2, -3].
+
+Write a function named oppositeArray that takes an array arr as an argument and returns an array in which each element is replaced with the opposite sign element.
+
+Example:
+
+the function opposite Array([1, -2, 3]) should return [-1, 2, -3].
+
+function oppositeArray(arr){
+  for ( let i = 0; i < arr.length; i++) {
+    arr[i] = -arr[i];
+  }
+return arr;  
+}
