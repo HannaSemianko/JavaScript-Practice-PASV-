@@ -1,0 +1,19 @@
+Напишите функцию checkingForfSafe, которая принимает две величины a и b в качестве аргументов, выполняет умножение числа a на число b, и проверяет, является ли произведение безопасным числом. Функция должна возвратить true, если произведение чисел - безопасное число, и false - в противном случае.
+
+Примеры:
+
+функция checkingForfSafe(4000, 2000) должна возвратить true;
+функция checkingForfSafe(9007199254740991, 10) должна возвратить false;
+функция checkingForfSafe(Infinity, 2) должна возвратить false.
+
+Write the function checkingForfSafe, which takes two values a and b as arguments, multiplies the number a by the number b, and checks whether the product is a safe number. The function must return true if the product of numbers is a safe number, and false otherwise.
+
+Examples:
+
+the checking forfSafe(4000, 2000) function should return true;
+the checking forfSafe(9007199254740991, 10) function should return false;
+the checking forfSafe(Infinity, 2) function should return false.
+
+function checkingForfSafe(a, b){
+  return Number.isSafeInteger(a * b);
+}
