@@ -1,0 +1,31 @@
+В здании высотой 30 этажей есть два кафетерия, расположенные на n и m этажах.
+
+Кафетерий на этаже n называется "Nonstop", кафетерий на этаже m называется "Merci".
+
+Вы работаете на этаже x, и хотите позавтракать в ближайшем кафетерии. В какой кафетерий вы отправитесь?
+
+Напишите функцию с именем nearestCafe, которая в качестве аргументов принимает три различные числа x, n, m (x - этаж, где вы находитесь; n, m - этажи, где расположены кафетерии) и возвращает название ближайшего кафетерия. В случае, если количество этажей до кафетериев одинаковое, вы предпочитаете завтракать в кафе "Merci".
+
+Примеры:
+
+функция nearestCafe(5, 6, 14) должна возвратить "Nonstop";
+функция nearestCafe(10, 1, 15) должна возвратить "Merci".
+
+
+The 30-story building has two cafeterias located on the n and m floors.
+
+The cafeteria on floor n is called "Non stop", the cafeteria on floor m is called "Merci".
+
+You work on floor x, and you want to have Breakfast in the nearest cafeteria.
+
+Write a function named nearestCafe that takes three different numbers x, n, m as arguments (x is the floor where you are located; n, m is the floors where the cafeterias are located) and returns the name of the nearest cafeteria. If the number of floors to the cafeteria is the same, you prefer to have Breakfast in the cafe "Merci".
+
+Examples:
+
+the nearestCafe(5, 6, 14) function should return " Nonstop";
+the nearestCafe(10, 1, 15) function should return "Merci".
+
+function nearestCafe(x, n, m){
+  if (Math.abs( n - x) < Math.abs( m - x)) return "Nonstop";
+    else return "Merci";
+}
