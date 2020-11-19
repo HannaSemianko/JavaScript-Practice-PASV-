@@ -1,0 +1,27 @@
+Получите массив степеней числа 2: [1, 2, 4, 8, 16 ... ]
+
+Напишите функцию с именем powersOfTwo, которая принимает число n в качестве аргумента, и возвращает массив степеней числа 2 (степени от 0 до n).
+
+Пример:
+
+функция powersOfTwo(2) должна возвратить [1, 2, 4];
+функция powersOfTwo(4) должна возвратить [1, 2, 4, 8, 16] .
+
+Get an array of powers of a number 2: [1, 2, 4, 8, 16 ... ]
+
+Write a function named power of Two that takes the number n as an argument and returns an array of powers of 2 (powers from 0 to n).
+
+Example:
+
+the power of Two(2) function should return [1, 2, 4];
+the power of Two(4) function should return [1, 2, 4, 8, 16] .
+
+
+function powersOfTwo(n){
+  let arr=[];
+   while ( n >= 0) { 
+    arr.unshift(Math.pow(2, n));
+    n--;
+  }
+ return arr;
+ }
