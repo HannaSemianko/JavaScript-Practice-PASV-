@@ -1,0 +1,25 @@
+Дан массив arr. Измените элементы массива, возведя каждый четный элемент в квадрат, а каждый нечетный элемент - в куб.
+
+Напишите функцию с именем powerArray, которая принимает массив arr, возводит каждый четный элемент в квадрат, каждый нечетный элемент - в куб, и возвращает измененный массив.
+
+Пример:
+
+функция powerArray([1, 2, 3, 5]) должна возвратить [1, 4, 27, 125];
+функция powerArray([2, 4, 6, 1]) должна возвратить [4, 16, 36, 1] .
+
+The arr array is given. Change the elements of the array, taking each even-numbered element in the square, and every odd element in the cube.
+
+Write a function called powerArray that takes an arr array, squares each even element, and cubes each odd element, and returns the modified array.
+
+Example:
+
+powerArray function([1, 2, 3, 5]) must return [1, 4, 27, 125];
+powerArray function([2, 4, 6, 1]) must return [4, 16, 36, 1] .
+
+function powerArray(arr){
+  for ( let i = 0; i < arr.length; i++) {
+    if ( arr[i] % 2 === 0 ) arr[i] = Math.pow( arr[i], 2);
+      else arr[i] = Math.pow( arr[i], 3);
+  }
+return arr;
+}
