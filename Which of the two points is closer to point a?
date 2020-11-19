@@ -1,0 +1,33 @@
+Три точки a, b, c с различными координатами лежат на числовой оси. Определите, какая из двух точек: b или c ближе к точке a.
+
+threePoints
+
+Напишите функцию с именем nearestPoint, которая принимает три числа a, b, c (координаты трех точек на числовой оси) в качестве аргументов и возвращает:
+
+строку "b", если точка b ближе к точке a,
+строку "c", если точка c ближе к точке a,
+строку "distances are equal", если расстояния от точек b и c до точки a равны.
+Примеры:
+
+функция nearestPoint(9, 6, 14) должна возвратить "b";
+функция nearestPoint(3, 0, 4) должна возвратить "c";
+функция nearestPoint(0, 2, -4) должна возвратить "b".
+
+Three points a, b, and c with different coordinates lie on the numeric axis. Determine which of the two points: b or c is closer to point a.
+
+three Points
+
+Write a function called nearest Point that takes three numbers a, b, c (the coordinates of three points on the number line) as arguments and returns:
+
+the string "b" if the point b closer to point a,
+the line "c" if the point c closer to point a,
+the line "distances are equal" if the distance from point b to point c to point a are equal.
+Examples:
+
+the nearestPoint(9, 6, 14) function should return "b";
+the nearestPoint(3, 0, 4) function should return "c";
+the nearestPoint(0, 2, -4) function should return "b".
+
+function nearestPoint(a, b, c){
+  return Math.abs(c - a) === Math.abs(b - a) ? "distances are equal" : Math.abs(c - a) > Math.abs(b - a) ? 'b' : 'c';
+}
