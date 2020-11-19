@@ -1,0 +1,30 @@
+Hайдите сумму квадратов чисел от 1 до n:
+
+sumOfsquares
+
+Напишите функцию с именем sumOfSquares, которая принимает число n в качестве аргумента, и возвращает сумму квадратов чисел от 1 до n.
+
+Пример:
+
+функция sumOfSquares(3) должна возвратить 14;
+функция sumOfSquares(4) должна возвратить 30.
+
+find the sum of squares of numbers from 1 to n:
+
+sumOfsquares
+
+Write a function named sumOfSquares that takes the number n as an argument and returns the sum of the squares of numbers from 1 to n.
+
+Example:
+
+the sumOfSquares(3) function should return 14;
+the sumOfSquares(4) function should return 30.
+
+function sumOfSquares(n){
+  let sum = 0
+  while ( n >= 1) {
+    sum+= Math.pow(n, 2);
+    n--;
+  }
+return sum;
+}
