@@ -1,0 +1,18 @@
+Напишите функцию min, которая принимает массив arr в качестве аргумента и возвращает минимальный элемент этого массива. Если массив пустой, функция должна вернуть [].
+
+Примеры:
+
+функция min([7, 23, 34, 9, 4, 45]) должна возвратить 4.
+функция min([]) должна возвратить [].
+
+Write a min function that takes an arr array as an argument and returns the minimum element of this array. If the array is empty, the function should return [].
+
+Examples:
+
+min function([7, 23, 34, 9, 4, 45]) should return 4.
+the min ([]) function should return [].
+
+
+function min(arr){
+  return arr.length > 0 ? Math.min(...arr) : [];  
+}
