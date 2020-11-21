@@ -1,0 +1,25 @@
+Напишите функцию minPositive, которая принимает массив arr в качестве аргумента и возвращает минимальный положительный элемент в массиве. Если массив arr не содержит положительных элементов, вернуть null.
+
+Пример:
+
+функция minPositive([3, 6, 8, -4, -3, 2, 16]) должна возвратить 2;
+функция minPositive([7, 5]) должна возвратить 5;
+функция minPositive([-7, -5]) должна возвратить null;
+функция minPositive([]) должна возвратить null.
+
+Write a minPositive function that takes an arr array as an argument and returns the minimum positive element in the array. If the arr array does not contain positive elements, return null.
+
+Example:
+
+minPositive function([3, 6, 8, -4, -3, 2, 16]) must return 2;
+the minPositive([7, 5]) function should return 5;
+the minPositive([-7, -5]) function must return null;
+the minPositive ([]) function must return null.
+
+function minPositive(arr){
+  let arrNew = [];
+    for ( let el of arr) {
+      if ( el > 0) arrNew.push(el);
+    }
+return arrNew.length > 0 ? Math.min(...arrNew) : null;
+}
