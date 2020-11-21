@@ -1,0 +1,35 @@
+В заплыве участвовало 3 спортсмена. Результаты соревнований хранятся в виде массива:
+
+[[name1, time1], [name2, time2], [name3, time3]].
+
+Определите время победителя.
+
+Напишите функцию с именем victoryInSwim, которая принимает массив arr, хранящий результаты соревнований, в качестве аргумента и возвращает наименьшее время. Во всех тестах количество спорсменов всегда равно 3.
+
+Пример:
+
+функция victoryInSwim([['Nick',8], ['Bob', 10], ['Kim', 6]]) должна возвратить 6.
+
+
+3 athletes participated in the swim. Competition results are stored as an array:
+
+[[name1, name1], [name2, name2], [name3, name3]].
+
+Determine the winner's time.
+
+Write a function named victory in Swim that takes the arr array that stores the results of the competition as an argument and returns the shortest time. In all tests, the number of athletes is always 3.
+
+Example:
+
+the function victory in Swim ([['Nick', 8], ['Bob', 10], ['Kim', 6]]) should return 6.
+
+function victoryInSwim(arr){
+ let arrNew = [];
+ for ( let el of arr) {
+   for ( let i of el) {
+     if (typeof i === 'number')
+     arrNew.push(i);
+   }
+ }
+ return Math.min(...arrNew); 
+}
