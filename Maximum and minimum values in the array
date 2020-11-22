@@ -1,0 +1,22 @@
+Напишите функцию maxMin, которая принимает массив arr в качестве аргументов и возвращает массив, содержащий максимальное и минимальное значение: [max, min]. Если массив пустой, вернуть [].
+
+Пример:
+
+функция maxMin([3, 4, 8, 1]) должна возвратить [8, 1];
+функция maxMin([7, 7]) должна возвратить [7, 7];
+функция maxMin([2]) должна возвратить [2, 2];
+функция maxMin([]) должна возвратить [];
+
+Write a maxMin function that takes an arr array as arguments and returns an array containing the maximum and minimum values: [max, min]. If the array is empty, return [].
+
+Example:
+
+maxMin function([3, 4, 8, 1]) must return [8, 1];
+the maxMin([7, 7]) function should return [7, 7];
+the maxMin([2]) function should return [2, 2];
+the maxMin([]) should return [];
+
+
+function maxMin(arr){
+ return arr.length > 0 ? [Math.max(...arr), Math.min(...arr)] : [];
+}
