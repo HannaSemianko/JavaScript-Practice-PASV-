@@ -1,0 +1,19 @@
+Напишите функцию max, которая принимает массив arr в качестве аргумента и возвращает максимальный элемент этого массива. Если массив пустой, функция должна вернуть [].
+
+Примеры:
+
+функция max([7, 88, 34, 9, 4, 45]) должна возвратить 88.
+функция max([]) должна возвратить [].
+
+
+Write a max function that takes an arr array as an argument and returns the maximum element of this array. If the array is empty, the function should return [].
+
+Examples:
+
+max function([7, 88, 34, 9, 4, 45]) should return 88.
+the max ([]) function should return [].
+
+
+function max(arr){
+  return arr.length > 0 ? Math.max(...arr): [];
+}
