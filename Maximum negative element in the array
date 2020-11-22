@@ -1,0 +1,26 @@
+Напишите функцию maxNegative, которая принимает массив arr в качестве аргумента и возвращает максимальный отрицательный элемент в массиве. Если массив arr не содержит отрицательных элементов, вернуть null.
+
+Пример:
+
+функция maxNegative([3, -54, 8, -21, 0]) должна возвратить -21;
+функция maxNegative([7, 5]) должна возвратить null;
+функция maxNegative([]) должна возвратить null.
+
+Write a maxNegative function that takes the arr array as an argument and returns the maximum negative element in the array. If the arr array does not contain negative elements, return null.
+
+Example:
+
+maxNegative function([3, -54, 8, -21, 0]) must return -21;
+the maxNegative([7, 5]) function must return null;
+the maxNegative ([]) function must return null.
+
+
+
+function maxNegative(arr){
+  let arrNew =[];
+  for( let el of arr) {
+    if ( el < 0) 
+    arrNew.push(el);
+  }
+  return arrNew.length > 0 ? Math.max(...arrNew) : null;
+}
