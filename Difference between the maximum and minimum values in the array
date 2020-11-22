@@ -1,0 +1,23 @@
+Напишите функцию differenceMaxMin, которая принимает массив arr в качестве аргумента и возвращает разность между максимальным и минимальным значением. Если массив пустой, вернуть null.
+
+Пример:
+
+функция differenceMaxMin([3, 4, 8, 1]) должна возвратить 7;
+функция differenceMaxMin([7, 7]) должна возвратить 0;
+функция differenceMaxMin([2]) должна возвратить 0;
+функция differenceMaxMin([]) должна возвратить null;
+
+
+Write a differenceMaxMin function that takes an arr array as an argument and returns the difference between the maximum and minimum values. If the array is empty, return null.
+
+Example:
+
+differenceMaxMin([3, 4, 8, 1]) should return 7;
+differenceMaxMin([7, 7]) function should return 0;
+differenceMaxMin([2]) function should return 0;
+thdifferenceMaxMin([]) function must return null;
+
+
+function differenceMaxMin(arr){
+  return arr.length > 0 ? Math.max(...arr) - Math.min(...arr) : null;
+}
