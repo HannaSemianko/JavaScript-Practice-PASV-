@@ -1,0 +1,33 @@
+При тестировании страницы регистрации пользователя вам надо протестировать поле "Phone number". Вам надо сделать множество тестов, и вы решили создавать случайные телефонные номера - 11-значные числа. Номер телефона должен начинаться с символа "+", первая цифра номера должна быть 1.
+
+Напишите функцию с именем createPhoneNumber, которая возвращает случайный номер телефона в виде строки длиной 12, начинающейеся с '+1', и случайных цифр.
+
+Указание.
+
+Создайте строку, содержащую первые два символа: '+1'.
+Создайте цикл, который выполняется 10 раз.
+В теле цикла получите случайное число от 0 до 9 и прибавьте это число к строке.
+Пример:
+
+функция createPhoneNumber() возвращает номер телефона в виде "+12345678910"
+
+When testing the user registration page, you need to test the "Phone number" field. You need to do a lot of tests, and you decided to create random phone numbers - 11-digit numbers. The phone number must start with the " + " symbol, and the first digit of the number must be 1.
+
+Write a function called create Phone Number that returns a random phone number as a string of length 12, starting with '+1', and random digits.
+
+Instruction.
+
+Create a string containing the first two characters: '+1'.
+Create a loop that runs 10 times.
+In the loop body, get a random number from 0 to 9 and add this number to the string.
+Example:
+
+the create Phone Number() function returns the phone number as " +12345678910"
+
+function createPhoneNumber(){
+  let str = '+1';
+  for (let i = 0; i < 10; i++){
+    str+= Math.floor(Math.random() * 10);
+  }
+  return str;
+}
