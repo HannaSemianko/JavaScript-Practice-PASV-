@@ -1,0 +1,25 @@
+Math.random() возвращает случайное число в диапазоне от 0 (включительно) и 1 (не включительно).
+
+Напишите функцию с именем integerFrom100To999, которая возвращает случайное целое трехзначное число (т.е. число от 100 до 999 включительно).
+
+Примеры:
+
+функция integerFrom100To999() возвращает 100 (любое целое число от 100 до 999);
+функция integerFrom100To999() возвращает 990 (любое целое число от 100 до 999);
+функция integerFrom100To999() возвращает 744 (любое целое число от 100 до 999).
+
+Math. random () returns a random number between 0 (inclusive) and 1 (non-inclusive).
+
+Write a function named integer From 100 To 999 that returns a random three-digit integer (i.e., a number from 100 to 999 inclusive).
+
+Examples:
+
+the integer from 100 To 999 () function returns 100 (any integer from 100 to 999);
+the integer from 100 To 999 () function returns 990 (any integer between 100 and 999);
+the integer from 100 To 999 () function returns 744 (any integer between 100 and 999).
+
+function integerFrom100To999(){
+let min = 100;
+let max = 990;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
